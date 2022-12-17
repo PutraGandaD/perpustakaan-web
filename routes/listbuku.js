@@ -6,7 +6,7 @@ const ListBuku = require('../models/ListBuku')
 // Create 
 router.post('/', async(req, res) => {
     // tampung input 
-    const listBukupost = new ListBuku({
+    const listBukuPost = new ListBuku({
         id_buku: req.body.id_buku,
         judul_buku: req.body.judul_buku,
         penulis_buku: req.body.penulis_buku,

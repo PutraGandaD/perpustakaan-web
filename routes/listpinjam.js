@@ -6,7 +6,7 @@ const ListPinjam = require('../models/ListPinjam')
 // Create 
 router.post('/', async(req, res) => {
     // tampung input 
-    const listPinjampost = new ListPinjam({
+    const listPinjamPost = new ListPinjam({
         id_buku: req.body.id_buku,
         nama_peminjam: req.body.nama_peminjam,
         nama_buku: req.body.nama_buku,
